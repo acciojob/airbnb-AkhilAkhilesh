@@ -1,7 +1,9 @@
 package com.driver.model;
 
-public class Booking {
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 
+public class Booking {
     private String bookingId; //This will be a random UUID generated String
 
     private int bookingAadharCard;
@@ -14,6 +16,8 @@ public class Booking {
 
     private int amountToBePaid;
 
+    public Booking() {}
+
     public Booking(String bookingId, int bookingAadharCard, int noOfRooms, String bookingPersonName, String hotelName) {
         this.bookingId = bookingId;
         this.bookingAadharCard = bookingAadharCard;
@@ -21,7 +25,6 @@ public class Booking {
         this.bookingPersonName = bookingPersonName;
         this.hotelName = hotelName;
     }
-
     public Booking(int bookingAadharCard, int noOfRooms, String bookingPersonName, String hotelName) {
         this.bookingAadharCard = bookingAadharCard;
         this.noOfRooms = noOfRooms;

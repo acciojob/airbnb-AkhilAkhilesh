@@ -10,6 +10,7 @@ public class User {
         this.aadharCardNo = aadharCardNo;
         this.name = name;
         this.age = age;
+
     }
 
     public int getaadharCardNo() {
